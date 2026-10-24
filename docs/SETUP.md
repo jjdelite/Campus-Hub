@@ -48,9 +48,9 @@ git config --global init.defaultBranch main
 
 **1. Create the project folder.**
 
-- This might be just a practie copy. Use file explorer of command line to make a folder like this:
+- Use file explorer of command line to make a folder like this:
 ```
-C:\dev\practice\Campus-Hub
+C:\dev\Campus-Hub
 ```
 
 
@@ -149,3 +149,193 @@ CS-312 Software Engineering, Team 5.
 - Setup instructions: see docs/SETUP.md
 - Problems and fixes: see docs/TIPS-TROUBLESHOOTING.md
 ```
+
+## Step 3 – Install Django and create the project
+
+**Goal:** install Django and see Django's welcome page in your browser.
+
+- **Django** – DJango Python web framework with ready-made code for building websites. It has
+  pages, forms, logins, databases so we don't start from scratch.
+- **`manage.py`** – the project's remote control which is created by Django creates it. You run commands on it like `python manage.py runserver`. It tells Django where our settings are, then runs the command you asked for. **THIS IS A BASIC DEFAULT FILE WE WILL PROBABLY NOT NEED TO EDIT TOO MUCH IF AT ALL**
+- **`config/`** – the folder holding the settings for the whole site which are in `settings.py` and the main list of web addresses which are in `urls.py`.
+- **Development server** – a small web server that runs on our own local computers so we can test. It uses the IP address `127.0.0.1` means "this computer", and port `8000`. We will need to figure out later how to deploy this to a web server on a cloud service so the professor can access it when it is running.
+
+**[NOTE YOU SHOULD ALREADY HAVE THESE CONFIG AND PYSTHON FILES IF YOU DID A GIT REPO CLONE]**
+
+### Steps
+
+Make sure the prompt shows **`(.venv)`** first.
+
+**1. Install the packages will need**
+
+```
+pip install -r requirements.txt
+```
+
+**2. Check that Django is installed:**
+
+```
+python -m django --version
+```
+
+**3. Create the Django project.**
+
+```
+django-admin startproject config .
+```
+
+You now have:
+
+```
+Campus-Hub/
+├── config/          ← site-wide settings and URLs (created by Django)
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+├── manage.py        ← the project's remote control (created by Django)
+├── hello.py
+├── requirements.txt
+├── .gitignore
+├── README.md
+└── docs/
+```
+
+**4. Start the development server:**
+
+```
+python manage.py runserver
+```
+
+**5. Open http://127.0.0.1:8000/** in the browser.
+Stop the server any time with **Ctrl + C** in the terminal.
+
+- When it is running `python -m django --version` should print `5.2.x`.
+- When you open browser page it shows Django's rocket page: **"The install worked successfully! Congratulations!"**
+- There might be warnings about migrations which will be taken care of later
+
+
+## Step 4 – This is where we make the first page for Campus Hub
+
+**Goal:** make Campus Hub show show a page "Hello from Campus Hub!"
+
+**New concepts.**
+
+- **App** – a Django **app** is a *section* of our one website, grouping related code like for example where we manage accounts or another app might be where we edit our planner items
+- **View** – a Python **function** that runs when someone visits a web address and returns what to show.
+- **URL pattern** – the thing that connects the URL web address to a view.
+
+How a request flows:
+
+```
+Browser asks for  /
+        │
+        ▼
+config/urls.py   →  "" (the home page) → hand it to planner/urls.py
+        │
+        ▼
+planner/urls.py  →  "" → views.home
+        │
+        ▼
+planner/views.py →  home(request) returns "Hello from Campus Hub!"
+        │
+        ▼
+Browser shows the text
+```
+
+### Steps
+
+**1. Create the app:**
+
+**[NOTE YOU SHOULD ALREADY HAVE THESE FILES IF YOU DID A GIT REPO CLONE SO YOU DON'T NEED TO DO THIS STEP]**
+
+```
+python manage.py startapp planner
+```
+
+A new `planner/` folder appears with `models.py`, `views.py` and other files.
+
+**2. Tell Django the app exists.** Open `config/settings.py`, find `INSTALLED_APPS`, and
+add `"planner",` as the **last line inside the brackets**:
+
+**[NOTE YOU SHOULD ALREADY HAVE THESE FILES IF YOU DID A GIT REPO CLONE SO YOU DON'T NEED TO DO THIS STEP]**
+
+```python
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    # ----- Our own apps go below Django's built-in ones -----
+    "planner",
+]
+```
+
+**3. Write the view.** Replace **everything** in `planner/views.py` with:
+
+```python
+# planner/views.py -- WHAT HAPPENS when someone visits a page.
+#
+# A "view" is just a Python function. Django calls it when a browser
+# asks for a web address, and gives it one argument: "request"
+# The view must RETURN a "response" which is what to send back to the browser which is what needs to be displayed on the page.
+# HttpResponse is Django's simplest response: plain text.
+from django.http import HttpResponse
+
+
+def home(request):
+    """The Campus Hub home page."""
+    return HttpResponse("Welcome to Campus Hub!")
+```
+
+**4. Create a new file `planner/urls.py`** (it does not exist yet) with:
+
+**[NOTE YOU SHOULD ALREADY HAVE THIS FILE IF YOU DID A GIT REPO CLONE SO YOU DON'T NEED TO DO THIS STEP]**
+
+```python
+# planner/urls.py -- WHICH web address runs WHICH view (for the planner app).
+#
+# Think of this list as mapping which maps the web address to a Python view.
+
+from django.urls import path   # path() creates one phone-book entry
+from . import views            # "." means "this app's folder": planner/views.py
+
+urlpatterns = [
+    # ""        This is the home page (nothing after the site address)
+    # views.home = the function to run
+    # name="home" = a nickname, so other code can say "home"
+    #  instead of typing the address
+    path("", views.home, name="home"),
+]
+```
+
+**5. Connect the app's URLs to the main list.** Replace **everything** in `config/urls.py` with:
+
+**[NOTE YOU SHOULD ALREADY HAVE THIS FILE IF YOU DID A GIT REPO CLONE SO YOU DON'T NEED TO DO THIS STEP]**
+
+```python
+# config/urls.py -- the MAIN list of web addresses for the whole site.
+# Django checks these from top to bottom for every request.
+
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    # Django's built-in admin website lives at /admin/
+    path("admin/", admin.site.urls),
+
+    # Everything else is handed to the planner app's own urls.py.
+    # include() lets each app keep its own list of web addresses / url patterns which keeps things neat and organized.
+    path("", include("planner.urls")),
+]
+```
+
+**6. Run it:** `python manage.py runserver`, then open http://127.0.0.1:8000/
+
+The browser should show in regular unformated plain text: **Hello from Campus Hub!**
+
+We replaced the rocket default page with our page for our app.
+
