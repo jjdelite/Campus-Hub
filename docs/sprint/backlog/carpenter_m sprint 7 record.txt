@@ -1,0 +1,5 @@
+Overall, I think our sprint went well this week. We were able to find a meeting time that works for James, Josias, and me, which should help us collaborate more consistently. We also agreed on using Django for our tech stack, started outlining our final presentation and paper, and began moving our documents into our GitHub repository.
+
+One area I think we can improve on is our overall structure, communication, and direction. I think we need to start assigning clear tasks and responsibilities to each group member so everyone knows exactly what they should be working on. Moving forward, having more defined goals and expectations for each sprint will help us stay organized and make more consistent progress.
+
+For our next sprint, I would like us to focus more on making progress with the actual development of our application. Now that we have agreed on a tech stack and have started organizing our materials, I think we should begin breaking the project into smaller tasks and setting deadlines for each one. This will help us hold each other accountable and make sure we are all contributing equally to the project.
