@@ -1,4 +1,4 @@
-The goal of this guide is so that we all can pretty much use the same environment when it comes the the Campus-Hub project. Even though we tried to make the setup as easy as possible, there are several things we need to install and configure so we can have the functions we need. That makes things a little tricky so we have the instructions all in one place.
+The goal of this guide is so that we all can pretty much use the same environment when it comes the the Campus-Hub project. Even though we tried to make the setup as easy as possible, there are several things we need to install and configure so here are the functions we need. That makes things a little tricky so we have the instructions all in one place.
 
 The idea is we have a bunch of steps that sets up the same type of development environment for all the team members. We eventually get to an environment that does everything we need it to do for the project.
 

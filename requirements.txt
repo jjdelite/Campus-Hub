@@ -1,0 +1,10 @@
+# requirements.txt -- the Python packages Campus Hub needs 
+# Note this is not our use cases, user stories, UML, etc. It is a list of everything VS Code needs to run our project and we can install it with one command:
+#      pip install -r requirements.txt
+#
+# Django 5.2 is a "long-term support" (LTS) version.
+# 5.2.8 or newer is needed for Python 3.14.
+# >=5.2.8  means "version 5.2.8 or newer"
+# <6.0     means "but not 6.0 or later" (a big new version could break our code)
+
+Django>=5.2.8,<6.0

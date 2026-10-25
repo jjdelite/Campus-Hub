@@ -1,0 +1,10 @@
+# .gitignore -- files Git should NOT track.
+# These are files that are unique to our own computers and do not make sense to track
+
+# Virtual envirnment, cache, local database
+.venv/
+__pycache__/
+*.pyc
+db.sqlite3
+.DS_Store
+Thumbs.db
