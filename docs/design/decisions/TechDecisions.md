@@ -17,3 +17,7 @@ It seems like they can be versioned in git easier than a Word, Excel, or Powerpo
 * Word files look like bianry data which VSCode can't display or edit.
 * Adding the "Markdown All In One" extension to VSCode helps make formatting easier.
 
+**Diagramming Tools**
+* UML We considered draw.io and Lucid Chart, but just ended up using markdown langauge and mermaid format for UML because the language is very simple and VS Code displays it right in the editor.
+
+

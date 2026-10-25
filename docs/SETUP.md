@@ -84,8 +84,6 @@ The terminal shows: `Hello, Campus Hub!`
 
 **Goal:** give the project its own private Python virtual environment (so we don't trash anything else and no other configurations in our Python / VS Code environment can trash this), a list of the packages it needs, and its first Git commit.
 
-### Steps
-
 **1. Create the virtual environment** inside the `Campus-Hub` folder:
 
 `py -3.14 -m venv .venv` 
@@ -162,8 +160,6 @@ CS-312 Software Engineering, Team 5.
 
 **[NOTE YOU SHOULD ALREADY HAVE THESE CONFIG AND PYSTHON FILES IF YOU DID A GIT REPO CLONE]**
 
-### Steps
-
 Make sure the prompt shows **`(.venv)`** first.
 
 **1. Install the packages will need**
@@ -212,6 +208,8 @@ python manage.py runserver
 Stop the server any time with **Ctrl + C** in the terminal.
 
 - When it is running `python -m django --version` should print `5.2.x`.
+
+**[NOTE YOU WILL NOT GET THE ROCKET PAGE SINCE THE APP IN THE REPO HAS ALREADY BEEN UPDATED TO BASIC CAMPUS HUB PAGE FROM STEP 4]**
 - When you open browser page it shows Django's rocket page: **"The install worked successfully! Congratulations!"**
 - There might be warnings about migrations which will be taken care of later
 
@@ -238,13 +236,13 @@ config/urls.py   →  "" (the home page) → hand it to planner/urls.py
 planner/urls.py  →  "" → views.home
         │
         ▼
-planner/views.py →  home(request) returns "Hello from Campus Hub!"
+planner/views.py →  home(request) returns "Welcome to Campus Hub!"
         │
         ▼
 Browser shows the text
 ```
 
-### Steps
+**[NOTE YOU PROBABLY ALREADY GOT THE "Welcome to Campus Hub!" PAGE IN STEP 3 BECAUSE THE REPO HAS ALREADY BEEN UPDATED. IF YUD DID, THEN YOU ARE DONE. JUST READ THE BELOW TO SEE HOW DJANGO MAPS URLS TO PYTHON CLASSES]**
 
 **1. Create the app:**
 
