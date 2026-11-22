@@ -6,10 +6,10 @@
 
 | Team Member | Attendance |
 | ----------- | ---------- |
-| Jack        |            |
-| James       |            |
-| Josias      |            |
-| Michael     |            |
+| Jack        | 🔴          |
+| James       | ✅          |
+| Josias      | ✅          |
+| Michael     | ✅          |
 
 
 
@@ -38,7 +38,7 @@
 | Coding - add item US-01                                      | James    | Yes     | 🔵 - Ready for Review |                                                              |
 | Coding - edit item US-07                                     | James    | Yes     | 🔵 - Ready for Review |                                                              |
 | Design - email service US-10                                 | James    | Yes     | 🔴                    | Noted as medium priority so deprioritized relative to the assignment requirements |
-| Deploy "Hello Campus Hub" to Hosting Service                 | Michael  | Yes     |                      | **(TODO - Need to formalize Tech Story numbers - James)**    |
+| Deploy "Hello Campus Hub" to Hosting Service                 | Michael  | Yes     | 🔴                    | **(TODO - Need to formalize Tech Story numbers - James)**    |
 | Unit Test Case Strategy - "Final Project Documentation - Item 4" | Michael  | Yes     |                      |                                                              |
 | Wireframes - "Final Project Documentation - Item 8"          | Josias   | Yes     |                      |                                                              |
 | Convert historical Sprint summary and planning docs to markdown | James    | Yes     | 🟡 In progress        | Only completed most recent due to other documentation priorities |
@@ -61,3 +61,12 @@
 | Need to understand and document the UI framework that was used by AI so that the UI would work on phones, computers browsers, etc. | James    | Add to design doc and class diagrams where it makes sense. |
 | Finish moving sprint docs to markdown / docs repo            | James    |                                                            |
 
+
+
+## Decisions
+
+* We will use PowerPoint to allow realtime editing and versioning by everybody at the same time. GitHub cannot do merges on what is sees as binary files (PowerPoint documents). When it is done we will put it into GitHub
+
+* We decided as a group to not implement <TECH-NN> which is deploying to a hosting service. According to the updated Final Presentation Documentation Requirements, the code is not the major focus of the final project and is almost noted as optional.
+
+  
