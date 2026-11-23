@@ -15,13 +15,14 @@
 
 ## Agenda Monday 11/22/2026
 
-1. Get status of items
-2. Review final presentation - go over slides that are done and speaker notes
-3. Final presentation - assign remaining slides to be completed
-4. Decide who will present which slides in the presentation
-5. Decide who will print plus submit to Blackboard - James?
-6. Final presentation - agree on a final presentation length - how long will we have to present?  Will we have 30 minutes which is 2 minutes per slide?
-7. Talk about how we will show this application working - record a video to submit? live demo?
+1. Get status of Sprint 9 items
+2. Review new unplanned items added to sprint.
+3. Review final presentation - go over slides that are done and speaker notes
+4. Final presentation - assign remaining slides to be completed
+5. Decide who will present which slides in the presentation
+6. Decide who will print plus submit to Blackboard - James?
+7. Final presentation - agree on a final presentation length - how long will we have to present?  Will we have 30 minutes which is 2 minutes per slide?
+8. Talk about how we will show this application working - record a video to submit? live demo?
 
 
 
