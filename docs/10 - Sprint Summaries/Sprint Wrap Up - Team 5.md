@@ -46,7 +46,7 @@
 | Create UML Sequence Diagrams for Priority Use Cases - "Final Project Documentation - Item 7" | TBD      | Yes     |               | One Sequence Diagram Per Priority Use Case                   |
 | Peer review, feedback, and approval of Final Project Documentation per the assignment | All      | Yes     |               |                                                              |
 | Need to understand and document the UI framework that was used by AI so that the UI would work on phones, computers browsers, etc. | James    | Yes     | 🟡 In progress | Add to design doc and class diagrams where it makes sense.   |
-| Finish moving sprint docs to markdown / docs repo            | James    | Yes     |               |                                                              |
+| Finish moving sprint docs to markdown / docs repo            | James    | Yes     | ✅ Complete    | location is: */docs/10-Sprint Summaries*                     |
 | Clean up Git                                                 | James    | No      | 🟡 In progress | removed some of the old structure before we got final structure from the Professor |
 | Update Final Presentation PowerPoint 1,2,3,4,5,8,9,12,13,14,15 | James    | No      | 🟡 In progress | Completed Slides 1,2,3,8 including speaker notes; Updated AI Use Notes |
 | Update Final Presentation PowerPoint slides 6, 7             |          |         |               |                                                              |
