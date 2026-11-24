@@ -1,4 +1,4 @@
-# Sprint Wrap Up / Presentation Prep
+# Sprints Wrap Up / Presentation Prep
 
 ## Date(s) - 11/23, 11/27, More Dates?
 
@@ -13,7 +13,7 @@
 
 
 
-## Agenda Monday 11/22/2026
+## Agenda Tuesday 11/23/2026  (12 Noon)
 
 1. Get status of Sprint 9 items
 2. Review new unplanned items added to sprint.
@@ -23,10 +23,12 @@
 6. Decide who will print plus submit to Blackboard - James?
 7. Final presentation - agree on a final presentation length - how long will we have to present?  Will we have 30 minutes which is 2 minutes per slide?
 8. Talk about how we will show this application working - record a video to submit? live demo?
+9. Compare *Team Project.pdf* initial requirements for project with *CS312 Final Project Documentation.pdf*
+   - Need to be sure we have clear written retrospective on the project (it is covered in multiple slides of the PowerPoint)
 
 
 
-## Agenda Friday 11/27/2026
+## Agenda Friday 11/27/2026  (2 PM)
 
 1. First Dry Run
 2. Go into detail about what is left to be done

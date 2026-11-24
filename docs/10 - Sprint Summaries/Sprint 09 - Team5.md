@@ -22,8 +22,7 @@
 3. Based on the new "Final Project Documentation" from the professor that we got last week, decide if we even need to deploy this to a hosting service.
 
 4. Brief look at the PowerPoint Presentation Template
-
-   A. Agree (or not) to do collaborative editing in PowerPoint in OneDrive because it very difficult to merge changes in "binary" docs in GitHub if everybody is working on it at the same time. Changes need to be updated manually, which is a ton of manual work. OneDrive and PowerPoint let everybody work on the presentation at the same time, and at the end we can put it in GitHub
+   - Agree (or not) to do collaborative editing in PowerPoint in OneDrive because it very difficult to merge changes in "binary" docs in GitHub if everybody is working on it at the same time. Changes need to be updated manually, which is a ton of manual work. OneDrive and PowerPoint let everybody work on the presentation at the same time, and at the end we can put it in GitHub
 
 5. Review Sprint 08 Accomplishments and blockers
 
@@ -67,6 +66,6 @@
 
 * We will use PowerPoint to allow realtime editing and versioning by everybody at the same time. GitHub cannot do merges on what is sees as binary files (PowerPoint documents). When it is done we will put it into GitHub
 
-* We decided as a group to not implement <TECH-NN> which is deploying to a hosting service. According to the updated Final Presentation Documentation Requirements, the code is not the major focus of the final project and is almost noted as optional.
+* We decided as a group to not implement TECH-03 which is deploying to a hosting service. According to the updated Final Presentation Documentation Requirements, the code is not the major focus of the final project and is almost noted as optional.
 
   

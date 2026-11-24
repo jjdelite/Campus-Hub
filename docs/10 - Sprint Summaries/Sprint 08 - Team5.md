@@ -46,6 +46,6 @@
 | Coding - edit item US-07 (pull request) | James |  |
 | Design - email service US-10 | James |  |
 | Deploy "Hello Campus Hub" to hosting service | Michael |  |
-| Unit test case strategy | Michael | First a simple test, then tests against our code, then decide when they run automatically |
+| Unit test case strategy | Michael |  |
 | Wireframes                                                   | Josias |  |
 | Convert historical sprint summary and planning docs to Markdown | James | Dates and content must match what the documents require |
