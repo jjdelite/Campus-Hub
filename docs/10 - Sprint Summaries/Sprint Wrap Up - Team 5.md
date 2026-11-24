@@ -20,11 +20,15 @@
 3. Review final presentation - go over slides that are done and speaker notes
 4. Final presentation - assign remaining slides to be completed
 5. Decide who will present which slides in the presentation
-6. Decide who will print plus submit to Blackboard - James?
+6. Decide who will print plus submit to Blackboard - James? - James
 7. Final presentation - agree on a final presentation length - how long will we have to present?  Will we have 30 minutes which is 2 minutes per slide?
-8. Talk about how we will show this application working - record a video to submit? live demo?
+8. Talk about how we will show this application working - record a video to submit? live demo? - Videos in a Google Photos link
 9. Compare *Team Project.pdf* initial requirements for project with *CS312 Final Project Documentation.pdf*
    - Need to be sure we have clear written retrospective on the project (it is covered in multiple slides of the PowerPoint)
+
+
+
+Michael is going to send an email to the professor about what we have to print, how long the presentation is supposed to be, and how long the peer review is supposed to be.
 
 
 
@@ -40,11 +44,11 @@
 
 | Item                                                         | Assigned | Planned | Status        | Notes                                                        |
 | ------------------------------------------------------------ | -------- | ------- | ------------- | ------------------------------------------------------------ |
-| Update Data Flow Diagrams (DFD)  - "Final Project Documentation - Item 3" | TBD      | Yes     |               | Put together from existing diagrams and fill in the gaps     |
-| Update Detailed Design Doc  - "Final Project Documentation - Item 4" | TBD      | Yes     |               | Put together from existing diagrams and fill in the gaps     |
-| Update UML Class Diagrams - "Final Project Documentation - Item 6" | James    | Yes     |               | Put together from existing diagrams and fill in the gaps     |
-| Create UML Sequence Diagrams for Priority Use Cases - "Final Project Documentation - Item 7" | TBD      | Yes     |               | One Sequence Diagram Per Priority Use Case                   |
-| Peer review, feedback, and approval of Final Project Documentation per the assignment | All      | Yes     |               |                                                              |
+| Update Data Flow Diagrams (DFD)  - "Final Project Documentation - Item 3" | Michael  | Yes     | 🟡In Progress  | Put together from existing diagrams and fill in the gaps     |
+| Update Detailed Design Doc  - "Final Project Documentation - Item 4" | Michael  | Yes     | 🟡In Progress  | Put together from existing diagrams and fill in the gaps     |
+| Update UML Class Diagrams - "Final Project Documentation - Item 6" | James    | Yes     | 🟡In Progress  | Put together from existing diagrams and fill in the gaps     |
+| Create UML Sequence Diagrams for Priority Use Cases - "Final Project Documentation - Item 7" | Josias   | Yes     | 🟡In Progress  | One Sequence Diagram Per Priority Use Case                   |
+| Peer review, feedback, and approval of Final Project Documentation per the assignment | All      | Yes     | 🟡In Progress  |                                                              |
 | Need to understand and document the UI framework that was used by AI so that the UI would work on phones, computers browsers, etc. | James    | Yes     | 🟡 In progress | Add to design doc and class diagrams where it makes sense.   |
 | Finish moving sprint docs to markdown / docs repo            | James    | Yes     | ✅ Complete    | location is: */docs/10-Sprint Summaries*                     |
 | Clean up Git                                                 | James    | No      | 🟡 In progress | removed some of the old structure before we got final structure from the Professor |
